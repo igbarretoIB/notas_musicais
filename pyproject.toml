@@ -6,13 +6,26 @@ authors = [
     {name = "Your Name",email = "you@example.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<4.0"
 dependencies = [
 ]
 
 [tool.poetry]
 packages = [{include = "notas_musicais", from = "src"}]
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+pytest-cov = "^6.3.0"
+blue = "^0.9.1"
+isort = "^6.0.1"
+taskipy = "^1.14.1"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.6.19"
+mkdocstrings = "^0.30.0"
+mkdocstrings-python = "^1.18.2"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
