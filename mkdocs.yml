@@ -1,0 +1,16 @@
+site_name: Notas Musicais
+repo_url: https://github.com/igbarretoIB/notas_musicais
+repo_name: igbarretoIB/notas_musicais
+edit_uri: tree/main/docs
+
+theme: 
+  name: material
+  language: pt-BR
+  logo: /assets/logo2.png
+  favicon: /assets/logo2.png
+
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - stylesheets/extra.css
