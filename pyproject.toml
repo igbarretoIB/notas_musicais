@@ -32,7 +32,7 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
-pythonpath= "."
+pythonpath= "/home/Barreto/Desktop/notas_musicais_project/notas_musicais"
 addopts= "--doctest-modules"
 
 [tool.isort]
@@ -41,9 +41,10 @@ line_length=79
 
 [tool.taskipy.tasks]
 lint = "echo '\n🔵 LINTING WITH BLUE\n' && blue --check --diff . && echo '\n📚 LINTING WITH ISORT\n' && isort --check --diff ."
+blue_fix= "blue ."
 docs = "mkdocs serve"
 show_docs = "mkdocs serve && firefox http://127.0.0.1:8000/"
 pre_test = "task lint"
-teste= "pytest -s -x -vv --cov=notas_musicais "
+test= "pytest -s -x -vv --cov=notas_musicais "
 post_test= "coverage html"
 show_coverage= "coverage html && firefox htmlcov/index.html"
