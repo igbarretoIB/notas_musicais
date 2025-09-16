@@ -21,3 +21,4 @@ plugins:
         python:
           paths:
             - notas_musicais
+            - src/notas_musicais
